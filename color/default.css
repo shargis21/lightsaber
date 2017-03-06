@@ -1,42 +1,42 @@
 a:hover,
 a:focus {
-    color: #FE7A66;
+    color: #167ac6;
 }
 
 a,.tp-caption a.btn:hover {
-	color: #FE7A66;
+	color: #167ac6;
 }
 .top-nav-collapse {
-	background: #FE7A66;
+	background: #167ac6;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	color: #FE7A66;
+	color: #167ac6;
 }
 
-.team-wrapper-big:hover .team-wrapper-overlay, .team-wrapper-small:hover .team-wrapper-overlay { background: #FE7A66; }
+.team-wrapper-big:hover .team-wrapper-overlay, .team-wrapper-small:hover .team-wrapper-overlay { background: #167ac6; }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-    background-color: #FE7A66;
+    background-color: #167ac6;
 }
 
 .widget-avatar .avatar:hover {
-    border: 5px solid #FE7A66;
+    border: 5px solid #167ac6;
 }
 
 .bg-skin {
-	background: #FE7A66;
+	background: #167ac6;
 }
 
 .highlight-color {
-	background-color: #FE7A66;
+	background-color: #167ac6;
 }
 
 
 /* pricing box  */
 .pricing-box.skin {
-	background: #FE7A66;
+	background: #167ac6;
 }
 
 
