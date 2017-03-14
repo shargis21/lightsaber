@@ -145,10 +145,6 @@ body, html {
 .nav-tabs {
      padding-left: 60px;
 }
-.tab-pane {
-     padding-left: 100px;
-     padding-right: 100px;
-}
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
