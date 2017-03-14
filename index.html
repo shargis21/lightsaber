@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
 	<link href="css/style.css" rel="stylesheet">
+	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/path/to/parallax.js"></script>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 	<script src="js/custom.js"></script>
 	
 	<!--cover bootstrap-->
-	
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="container">
@@ -33,7 +34,7 @@
 				</div>
       </div>
     </div>
-	<!--end bootstrap-->
+	<!--end cover bootstrap-->
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -59,42 +60,36 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav><br>
 	
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>What's a Lightsaber?</h2><br>
-      <h4>The lightsaber, sometimes referred to as a laser sword, was a weapon used by the Jedi, the Sith, and other Force-sensitives.</h4><br>
+	<!--new about section-->
+	        <!-- Nav tabs -->
+	  <div class="container-fluid text-center">
+          <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#description" aria-controls="About" role="tab" data-toggle="tab">About</a></li>
+          <li role="presentation"><a href="#history" aria-controls="History" role="tab" data-toggle="tab">History</a></li>
+  </ul>
+           <!-- Tab panes -->
+           <div class="tab-content">
+             <div role="tabpanel" class="tab-pane active" id="description"><br>
+                <h2>What's a Lightsaber?</h2>
+       <h4>The lightsaber, sometimes referred to as a laser sword, was a weapon used by the Jedi, the Sith, and other Force-sensitives.</h4><br>
       <p>Lightsabers consisted of a plasma blade, powered by a kyber crystal, that was emitted from a usually metal hilt. It was a weapon that required skill and training, and was greatly enhanced when used in conjunction with the Force. Though also used by the Sith, the lightsaber was synonymous with the Jedi, with some in the galaxy believing only Jedi used lightsabers.</p>
-      <br><button class="btn btn-default btn-lg">Order Yours Now!</button>
-    </div>
-    <div class="col-sm-4">
-			<span class="glyphicon logo slideanim"></span>
-      <img src="rainbow-saber.jpg" alt="Rainbow Sabers" style="width:404px;height:328px;">
-    </div>
-  </div>
-</div>
+          <br><button class="btn btn-default btn-lg">Order Yours Now!</button>   
+		</div>
+          
 
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon logo slideanim"></span>
-			<img src="saber-blue.jpg" alt="Blue Saber" style="width:404px;height:300px">
-    </div>
-    <div class="col-sm-8">
-      <h2>History of the Lightsaber</h2><br>
+        <div role="tabpanel" class="tab-pane" id="history"><br>
+		  <h2>History of the Lightsaber</h2>
       <h4>Though it is unknown when the first lightsaber was created, it is known they were in use thousands of years before the age of the Republic, in the Great Scourge of Malachor.</h4><br>
       <p>Lightsabers took on a more prominent role in galactic affairs as the Clone Wars came to pass. Jedi, previously peacekeepers, became Jedi Generals of the Grand Army of the Republic, and thus began using their lightsabers more often than they had in their role of peacekeeping.
 As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rarity in the galaxy, as the Jedi who once used them were greatly reduced in number and did not use their weapons as often for fear of drawing attention. For the majority of the reign of the Empire, the only lightsaber that was prominently used was that of Darth Vader, and, in its waning years, that of Luke Skywalker.</p>
-    </div>
-  </div>
-</div>
+      </div>
+      </div> <br><br><br>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
+<div id="services" class="container-fluid bg-grey text-center">
   <h2>FEATURES</h2>
   <h4>Checkout all the different features a lightsaber has to offer</h4>
   <br>
@@ -136,7 +131,7 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
 </div>
 
 <!-- Examples Section -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center">
 <h2>Learn From the Pros</h2>
 <h4>Check out some lightsabers for all different skill levels. <strong>Click on each one to learn more!</strong></h4>
 <div class="row text-center">		
@@ -179,7 +174,7 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
 </div><br><br><br>
 	
 	<!--end examples-->
-  
+  <div class="container-fluid bg-grey text-center">
   <h2>What our customers say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -305,8 +300,14 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
       </div>
     </div>
   </div>
-</div>
-
+</div><br><br><br>
+	
+	<!--new map-->
+      <div id="map">
+        <h2>Map</h2>
+        <div id="map-container"></div>
+      </div>
+	
 <!-- Google Maps -->
 <h2 class="text-center">FIND US IN A STORE NEAR YOU</h2>
 <div id="googleMap" style="height:400px;width:100%;"></div>
@@ -318,6 +319,7 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
 }
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGaC9EVKGw2vjlnMJ2Q6PcTNI1zDO0prw&callback=myMap"></script>
 	
@@ -327,6 +329,13 @@ marker.setMap(map);
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
 </footer>
+	
+	        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 </html>

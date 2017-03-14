@@ -30,9 +30,11 @@ body, html {
 }
   .container-fluid {
       padding: 60px 50px;
+      width: 100%;
   }
   .bg-grey {
       background-color: #f6f6f6;
+      width: 100%;
   }
   .logo-small {
       color: #3CAABE;
@@ -196,6 +198,9 @@ body, html {
     filter: grayscale(90%); /* make all photos black and white */ 
     width: 100%; /* Set width to 100% */
     margin: auto;
+}
+#mapid { 
+  height: 180px;
 }
 
 /*cover */
