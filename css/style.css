@@ -17,6 +17,13 @@
       font-weight: 400;
       margin-bottom: 30px;
   }  
+  h6 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #3CAABE;
+      font-weight: 400;
+    text-align: center;
+  }  
   .jumbotron {
       background-image: url("saber-blue.jpg");
       background-repeat: no-repeat;
@@ -134,6 +141,13 @@ body, html {
       border-color: transparent;
       color: #fff !important;
   }
+.nav-tabs {
+     padding-left: 60px;
+}
+.tab-pane {
+     padding-left: 100px;
+     padding-right: 100px;
+}
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;

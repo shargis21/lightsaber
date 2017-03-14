@@ -14,6 +14,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+  <script src="jquery.localscroll.js" type="text/javascript"></script> 
+  <script src="jquery.scrollTo.js" type="text/javascript"></script> 
 	<script src="js/custom.js"></script>
 	
 	<!--cover bootstrap-->
@@ -28,13 +31,14 @@
             <h1><strong>LIGHTSABERS ARE AWESOME</strong></h1>
             <h3>We specialize in creating custom, hand-built lightsabers for your inner Jedi.</h3>
             <p class="lead"><br>
-              <a href="#" class="btn btn-lg btn-default">Learn More</a>
+              <a href="#description" class="btn btn-lg btn-default">Learn More</a>
             </p>
           </div>
 				</div>
       </div>
     </div>
 	<!--end cover bootstrap-->
+	
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -65,22 +69,23 @@
 
 	<!--new about section-->
 	        <!-- Nav tabs -->
-	  <div class="container-fluid text-center">
+	  
           <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active"><a href="#description" aria-controls="About" role="tab" data-toggle="tab">About</a></li>
           <li role="presentation"><a href="#history" aria-controls="History" role="tab" data-toggle="tab">History</a></li>
   </ul>
            <!-- Tab panes -->
-           <div class="tab-content">
-             <div role="tabpanel" class="tab-pane active" id="description"><br>
+
+           <div class="tab-content container-fluid text-center">
+             <div role="tabpanel" class="tab-pane active text-center" id="description"><br>
                 <h2>What's a Lightsaber?</h2>
        <h4>The lightsaber, sometimes referred to as a laser sword, was a weapon used by the Jedi, the Sith, and other Force-sensitives.</h4><br>
       <p>Lightsabers consisted of a plasma blade, powered by a kyber crystal, that was emitted from a usually metal hilt. It was a weapon that required skill and training, and was greatly enhanced when used in conjunction with the Force. Though also used by the Sith, the lightsaber was synonymous with the Jedi, with some in the galaxy believing only Jedi used lightsabers.</p>
-          <br><button class="btn btn-default btn-lg">Order Yours Now!</button>   
+								 <br><a href="#services" class="btn btn-lg btn-default">Learn More</a>   
 		</div>
           
 
-        <div role="tabpanel" class="tab-pane" id="history"><br>
+        <div role="tabpanel" class="tab-pane text-center" id="history"><br>
 		  <h2>History of the Lightsaber</h2>
       <h4>Though it is unknown when the first lightsaber was created, it is known they were in use thousands of years before the age of the Republic, in the Great Scourge of Malachor.</h4><br>
       <p>Lightsabers took on a more prominent role in galactic affairs as the Clone Wars came to pass. Jedi, previously peacekeepers, became Jedi Generals of the Grand Army of the Republic, and thus began using their lightsabers more often than they had in their role of peacekeeping.
@@ -136,7 +141,7 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
 <h4>Check out some lightsabers for all different skill levels. <strong>Click on each one to learn more!</strong></h4>
 <div class="row text-center">		
   <div class="col-sm-3">
-    <p class="text-center"><strong>Jedi Master Yoda</strong></p><br>
+    <h6>Jedi Master Yoda</h6><br>
     <a href="#demo" data-toggle="collapse">
       <img src="yoda.jpg" class="img-circle person" alt="Master Yoda">
     </a>
@@ -145,7 +150,7 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
     </div>
   </div>
   <div class="col-sm-3">
-    <p class="text-center"><strong>Darth Vader</strong></p><br>
+    <h6>Darth Vader</h6><br>
     <a href="#demo2" data-toggle="collapse">
       <img src="vader.jpg" class="img-circle person" alt="Darth Vader">
     </a>
@@ -154,29 +159,29 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
     </div>
   </div>
 	<div class="col-sm-3">
-    <p class="text-center"><strong>Rey</strong></p><br>
-    <a href="#demo2" data-toggle="collapse">
+    <h6>Rey</h6><br>
+    <a href="#demo3" data-toggle="collapse">
       <img src="rey-copy.jpg" class="img-circle person" alt="Rey">
     </a>
-    <div id="demo2" class="collapse">
+    <div id="demo3" class="collapse">
       <p>Originally constructed by Anakin Skywalker then passed to his son, Luke, this saber was hidden away for many years by Maz Kanata before being given to scavenger Rey.</p>
     </div>
   </div>
   <div class="col-sm-3">
-    <p class="text-center"><strong>Kylo Ren</strong></p><br>
-    <a href="#demo3" data-toggle="collapse">
+    <h6>Kylo Ren</h6><br>
+    <a href="#demo4" data-toggle="collapse">
       <img src="kylo-ren.jpg" class="img-circle person" alt="Kylo Ren">
     </a>
-    <div id="demo3" class="collapse">
+    <div id="demo4" class="collapse">
       <p>This lightsaber was crudely assembled by Kylo Ren based on an ancient design. A single cracked Cyber crystal gave the weapon’s red plasma blades an unstable appearance.</p>
     </div>
   </div>
 </div><br><br><br>
 	
 	<!--end examples-->
-  <div class="container-fluid bg-grey text-center">
+	<div class="container-fluid bg-grey text-center">
   <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide bg-grey text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -230,7 +235,7 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
         </div>
         <div class="panel-footer">
           <h3>$399</h3>
-          <button class="btn btn-lg">Customize & Buy</button>
+          <a href="#contact" class="btn btn-lg btn-default">Customize & Buy</a>
         </div>
       </div>      
     </div>     
@@ -248,7 +253,7 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
         </div>
         <div class="panel-footer">
           <h3>$449</h3>
-          <button class="btn btn-lg">Customize & Buy</button>
+          <a href="#contact" class="btn btn-lg btn-default">Customize & Buy</a>
         </div>
       </div>      
     </div>       
@@ -266,7 +271,7 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
         </div>
         <div class="panel-footer">
           <h3>$499</h3>
-          <button class="btn btn-lg">Customize & Buy</button>
+          <a href="#contact" class="btn btn-lg btn-default">Customize & Buy</a>
         </div>
       </div>      
     </div>    
@@ -302,14 +307,8 @@ As the Clone Wars ended, and the Jedi Purge took place, lightsabers became a rar
   </div>
 </div><br><br><br>
 	
-	<!--new map-->
-      <div id="map">
-        <h2>Map</h2>
-        <div id="map-container"></div>
-      </div>
-	
 <!-- Google Maps -->
-<h2 class="text-center">FIND US IN A STORE NEAR YOU</h2>
+<h2 class="text-center">HEADQUARTERED IN SEATTLE, WA</h2>
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
 function myMap() {
@@ -330,9 +329,8 @@ marker.setMap(map);
   </a>
 </footer>
 	
-	        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
         <script src="js/main.js"></script>
