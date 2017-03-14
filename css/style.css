@@ -23,7 +23,6 @@
       color: #3CAABE;
       font-weight: 400;
     text-align: center;
-  
 }
   .jumbotron {
       background-image: url("saber-blue.jpg");
@@ -35,6 +34,7 @@
 
 body, html {
     height: 100%;
+    width: 100%;
 }
   .container-fluid {
       padding: 60px 50px;
